@@ -1,0 +1,6 @@
+Riferimenti inseriti sulla base dell'elenco Publications G.Vola (22_set_2026).docx.
+Ogni scheda propone articoli correlati ai temi trattati: non tutti i lavori attestano,
+dal solo titolo, l'utilizzo di ogni tecnica analitica riportata.
+Per CLM, ICP-MS, isotopi e micropaleontologia sono previste note di cautela. EPR e TOC rimandano a Vola et al. (2023), Minerals 13(12), 1500.
+L'articolo Massa et al. 2026 è citato come pubblicato, con DOI 10.1016/j.powtec.2026.122568.
+I DOI rimandano ai siti degli editori: la disponibilità del full text dipende dall'accesso.

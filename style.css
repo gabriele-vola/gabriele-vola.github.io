@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--forest:#163f39;--deep:#10322d;--green:#27574d;--cream:#f7f4ed;--paper:#fffefa;--ink:#233b36;--muted:#64736d;--line:#d9dfd8}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.65}h1,h2,h3,.brand{font-family:Manrope,Arial,sans-serif}h1,h2,h3,p,figure{margin-top:0}h1{font-size:clamp(2.55rem,5vw,4.8rem);line-height:1.12;letter-spacing:-.05em;font-weight:700}h2{font-size:clamp(2rem,3.7vw,3.2rem);letter-spacing:-.045em;line-height:1.2}h3{font-size:1.2rem;line-height:1.3;margin-bottom:.6rem}a{color:inherit}.shell{width:min(1160px,calc(100% - 48px));margin:auto}.header{background:var(--paper);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}.nav{min-height:86px;display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.2;letter-spacing:.07em}.brand strong{font-size:1.05rem}.brand span{font-size:.67rem;letter-spacing:.18em;margin-top:5px;color:var(--muted)}nav{display:flex;gap:25px}nav a{text-decoration:none;font-size:.86rem;font-weight:700}nav a:hover,.textlink:hover{color:#518a77}.menu{display:none;border:0;background:transparent;font-size:1.5rem;cursor:pointer}.skip{position:absolute;top:-60px;left:10px;background:white;padding:10px;z-index:30}.skip:focus{top:10px}.hero{background:var(--forest);color:#f5f4ed;padding:90px 0 94px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:65px}.eyebrow{letter-spacing:.18em;font-weight:700;font-size:.72rem;color:#b1d2c1;margin-bottom:22px}.eyebrow.dark{color:#497b6b}.lead{font-size:1.11rem;color:#d4e1da;max-width:570px}.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:31px}.button{display:inline-block;padding:12px 20px;text-decoration:none;border-radius:4px;font-weight:700;font-size:.88rem}.button.light{background:var(--cream);color:var(--forest)}.button.outline{border:1px solid #91b0a6}.button.green{background:var(--forest);color:white}.photo{margin:0;overflow:hidden;position:relative;background:#d6dad3;border-radius:4px}.photo img{display:block;width:100%;height:100%;object-fit:cover}.photo figcaption{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.55));color:white;padding:36px 18px 13px;font-size:.73rem;letter-spacing:.04em}.hero-photo{height:430px}.hero-photo img{object-position:center}.section{padding-top:96px;padding-bottom:96px}.two{display:grid;grid-template-columns:1fr 1fr;gap:70px}.profile-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}.profile-layout p{max-width:680px}.profile-photo{height:360px}.profile-photo img{object-position:center 22%}.section-soft{background:var(--cream)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px}.tile{background:var(--paper);box-shadow:0 9px 25px #183c3210;padding-bottom:22px}.tile h3,.tile p{padding:0 20px}.tile h3{margin-top:22px}.tile p{font-size:.92rem;color:#51635b;margin-bottom:0}.tile-photo{width:100%;height:235px;object-fit:cover;display:block}.tile:nth-child(2) .tile-photo{object-position:center 36%}.services{list-style:none;padding:0;margin:0}.services li{padding:12px 0;border-bottom:1px solid var(--line);font-weight:600}.note{font-size:.82rem;color:var(--muted);margin-top:28px}.heritage{background:var(--deep);color:white}.heritage-grid{align-items:center}.heritage-photo{height:350px}.heritage h2{max-width:520px}.heritage p{color:#d0e2d9}.textlink{font-weight:700;color:#c8e0cf;text-decoration:none}.contact{text-align:center}.contact>p:not(.eyebrow){max-width:550px;margin:0 auto 24px}.contact .location{margin-top:25px!important;color:var(--muted)}footer{background:#e9eee8;font-size:.8rem}.footer-inner{min-height:85px;display:flex;align-items:center;justify-content:space-between;gap:20px}footer a{text-decoration:none}@media(max-width:850px){.hero-grid,.two,.profile-layout{grid-template-columns:1fr;gap:35px}.hero{padding:66px 0}.hero-photo{height:370px}.profile-photo{height:440px}.cards{grid-template-columns:1fr 1fr}nav{display:none;position:absolute;top:85px;left:0;right:0;background:var(--paper);padding:20px 24px;border-bottom:1px solid var(--line);flex-direction:column;gap:14px}nav.open{display:flex}.menu{display:block}}@media(max-width:600px){.shell{width:min(100% - 32px,1160px)}.nav{min-height:75px}nav{top:74px}.hero-photo{height:270px}.section{padding-top:66px;padding-bottom:66px}.cards{grid-template-columns:1fr}.tile-photo{height:235px}.profile-photo{height:360px}.heritage-photo{height:260px}.footer-inner{padding:20px 0;flex-wrap:wrap}.hero-grid{gap:35px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Pubblicazioni e bibliografia accademica */
+.pub-lead{max-width:720px;color:var(--muted);margin-bottom:28px}.publications-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.pub-card{border:1px solid var(--line);background:var(--paper);padding:24px;border-radius:5px}.pub-card h3{font-size:1.09rem;line-height:1.46;margin-bottom:18px}.pub-card a{color:var(--green);font-weight:700;text-decoration:none}.pub-card a:hover{text-decoration:underline}.pub-tag{font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:#58786c;font-weight:700;margin-bottom:12px}.publication-actions,.bibliography-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.bibliography-outline{border:1px solid var(--green);color:var(--green)}.bibliography h1{color:var(--forest);font-size:clamp(2.5rem,5vw,4.3rem)}.bibliography-intro{max-width:870px;color:var(--muted)}.bibliography-group{margin-top:58px}.bibliography-group h2{font-size:1.7rem;padding-bottom:12px;border-bottom:1px solid var(--line)}.bibliography-group ol{padding-left:34px}.bibliography-group li{padding:12px 0;overflow-wrap:anywhere}.bibliography-group li::marker{font-weight:700;color:var(--green)}.bibliography-group a{color:var(--green)}@media(max-width:700px){.publications-grid{grid-template-columns:1fr}.pub-card{padding:20px}}
+
+/* Libro 2025 */
+.book-layout{display:grid;grid-template-columns:minmax(250px,.75fr) minmax(0,1.25fr);gap:clamp(24px,6vw,85px);align-items:center}.book-cover{aspect-ratio:4/5;max-width:390px;background:linear-gradient(145deg,#204c43,#0f2e2a);color:#f3f0e4;border-left:11px solid #a2af9d;box-shadow:18px 20px 35px #1a3e3430;padding:clamp(24px,4vw,42px);display:flex;flex-direction:column;justify-content:center;gap:20px;position:relative}.book-cover:after{content:'';position:absolute;bottom:30px;left:42px;right:42px;height:1px;background:#9cb8a6}.book-cover-kicker{font-size:.7rem;letter-spacing:.14em}.book-cover-title{font-family:Manrope,Arial,sans-serif;font-size:clamp(1.65rem,3vw,2.45rem);font-weight:800;letter-spacing:-.05em;line-height:1.18}.book-cover-subtitle{font-size:1.2rem}.book-cover-author{font-size:.82rem;margin-top:26px}.book-details h2{font-size:clamp(1.9rem,3.6vw,3rem)}.book-details p{max-width:610px}.book-disclaimer{font-size:.75rem;color:var(--muted);margin-top:18px}@media(max-width:720px){.book-layout{grid-template-columns:1fr}.book-cover{width:min(100%,345px);margin:0 auto}.book-details{padding-top:10px}}
+
+/* Copertina editoriale autentica */
+.book-cover-image{margin:0;max-width:390px}.book-cover-image img{display:block;width:100%;height:auto;box-shadow:15px 20px 35px #1a3e3430;border-radius:2px}.book-cover-image figcaption{margin-top:12px;font-size:.76rem;color:var(--muted)}@media(max-width:720px){.book-cover-image{width:min(100%,345px);margin:0 auto}}
+
+/* Progetto editoriale in preparazione */
+.editorial-progress{padding:55px 0 66px;border-bottom:1px solid var(--line)}.editorial-progress h2{max-width:850px}.editorial-progress>p:not(.eyebrow){max-width:880px}.progress-status{font-weight:600;color:var(--green);font-size:.91rem}.bibliography li{overflow-wrap:anywhere}
+
+/* Collaborazioni scientifiche */
+.collab-intro{max-width:760px;margin-bottom:30px}
+.collab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.collab-card{background:var(--paper);padding:26px;border:1px solid var(--line);border-radius:5px;display:flex;flex-direction:column}
+.collab-card h3{margin:0 0 10px}
+.collab-uni{font-weight:700;color:var(--forest);margin:0 0 7px}
+.collab-field{font-size:.88rem;color:var(--muted);margin:0 0 20px}
+.collab-card a{font-weight:700;font-size:.88rem;margin-top:auto;text-underline-offset:4px}
+@media(min-width:851px) and (max-width:1120px){.nav{gap:12px}nav{gap:12px}nav a{font-size:.78rem}}
+
+.collab-international{margin-top:52px;padding-top:25px;border-top:1px solid var(--line)}.collab-international>h3{font-size:1.55rem}.collab-international .collab-card{max-width:570px}
+
+.collab-heritage{margin-top:48px}.collab-heritage>h3{font-size:clamp(1.4rem,2.5vw,2rem)}
+
+/* Metodologie scientifiche */
+.methods-preview-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}
+.methods-preview-image{height:285px}.methods-preview-image img{object-position:center 38%}
+.methods-preview p{max-width:720px;margin-bottom:24px}
+.methods-hero{background:var(--forest);color:#fff;padding:80px 0}
+.methods-hero-layout{display:grid;grid-template-columns:1.18fr .82fr;gap:45px;align-items:center}
+.methods-hero h1{font-size:clamp(2.4rem,4vw,4rem)}
+.methods-hero-photo{height:340px}.methods-hero-note{color:#bed5cd;font-size:.87rem;margin-top:25px}
+.methods-intro{max-width:830px;color:var(--muted);margin-bottom:28px}
+.methods-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.method-card{border:1px solid var(--line);background:var(--paper);border-radius:5px;padding:25px}
+.method-card h3{margin:12px 0 10px}.method-card p{font-size:.92rem;color:var(--muted);margin:0}
+.method-tech{font-size:.74rem;font-weight:700;color:#477c69;letter-spacing:.035em}
+.methods-apps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.methods-apps article{border-top:3px solid var(--forest);padding-top:16px}
+.methods-apps p{font-size:.92rem;color:var(--muted)}
+.method-disclaimer{margin-top:28px;color:var(--muted);font-size:.82rem}
+.button.method-outline{border:1px solid var(--forest);color:var(--forest)}
+@media(max-width:1000px){.nav{gap:13px}nav{gap:13px}nav a{font-size:.78rem}}
+@media(max-width:850px){.methods-preview-grid,.methods-hero-layout{grid-template-columns:1fr}.methods-apps{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.methods-grid,.methods-apps{grid-template-columns:1fr}.methods-hero{padding:55px 0}.methods-hero-photo{height:250px}}
+
+/* Riferimenti bibliografici nelle schede metodologiche */
+.method-pubs{border-top:1px solid var(--line);margin-top:20px;padding-top:14px}
+.method-pubs-title{color:var(--forest)!important;font-weight:700;font-size:.83rem!important;margin:0 0 7px!important}
+.method-pubs ul{margin:0;padding-left:19px}
+.method-pubs li{margin:0 0 8px;line-height:1.4;font-size:.81rem}
+.method-pubs a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.method-reference-note{font-size:.79rem!important;line-height:1.5;color:var(--muted)!important;margin:8px 0 0!important}
+
+/* Aggiornamenti immagini ottobre 2026 */
+.methods-preview-image img{object-position:center center}
+.heritage-photo img{object-position:center 38%}
+
+/* Pagina progetto Marmi delle Valli Valdesi */
+.marbles-heading{background:var(--forest);color:white;padding:75px 0 65px}.marbles-heading h1{max-width:900px}.marbles-heading .lead{max-width:850px}
+.marbles-landscape{background:var(--deep);padding:25px 0 34px}.marbles-landscape figure{margin:0}.marbles-landscape img{width:100%;height:auto;display:block;border-radius:3px}.marbles-landscape figcaption{color:#d2e1d8;font-size:.83rem;margin-top:12px}
+.marbles-prose{max-width:860px;font-size:1.05rem}.marbles-cards,.marbles-references{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
+.marbles-cards article,.marbles-references article{border:1px solid var(--line);background:var(--paper);padding:24px;border-radius:4px}.marbles-cards p,.marbles-references p{font-size:.9rem;color:var(--muted)}
+.marbles-references span{font-size:.76rem;font-weight:700;color:var(--green)}.marbles-references a{font-weight:700;text-underline-offset:4px}
+.marbles-method{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:40px}.marbles-method figure{margin:0}.marbles-method img{display:block;width:100%;height:290px;object-fit:cover;border-radius:4px}.marbles-method figcaption{font-size:.78rem;margin-top:9px;color:var(--muted)}
+#progetti .textlink{display:inline-block;margin-top:12px}
+.editorial-progress .button{margin-top:9px}
+@media(min-width:851px){.marbles-heading{padding-top:92px}.nav{gap:13px}nav{gap:13px}nav a{font-size:.78rem}}
+@media(max-width:850px){.marbles-cards,.marbles-references{grid-template-columns:1fr 1fr}.marbles-method{grid-template-columns:1fr}}
+@media(max-width:600px){.marbles-cards,.marbles-references{grid-template-columns:1fr}.marbles-heading{padding:54px 0}}
+
+/* Recensioni e segnalazioni del volume */
+.reviews-intro{max-width:850px;color:var(--muted);margin-bottom:32px}
+.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.review-card{background:var(--cream);border:1px solid var(--line);border-radius:5px;overflow:hidden;display:flex;flex-direction:column}
+.review-media{height:235px;display:block;overflow:hidden;background:#e4e6de}
+.review-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.review-copy{padding:20px 21px 23px;display:flex;flex-direction:column;flex:1}
+.review-copy h3{font-size:1.07rem;line-height:1.36}
+.review-copy p{font-size:.91rem;color:var(--ink)}
+.review-copy .review-type{font-size:.71rem;color:var(--green);font-weight:700;letter-spacing:.09em;margin-bottom:10px}
+.review-copy a{font-size:.87rem;font-weight:700;color:var(--forest);margin-top:auto}
+.book-reviews-link{display:block;margin-top:14px;font-weight:700;color:var(--forest)}
+@media(max-width:850px){.review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.review-grid{grid-template-columns:1fr}.review-media{height:260px}}
+
+/* Recensione di Tullio Parise - galleria a piena risoluzione */
+.review-full{margin-top:38px;border-top:1px solid var(--line);padding-top:27px;scroll-margin-top:100px}
+.review-full>p{font-size:.92rem;color:var(--muted)}
+.review-pages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:18px}
+.review-pages a{display:block;color:var(--forest);font-weight:700;font-size:.83rem;text-decoration:none}
+.review-pages img{height:210px;width:100%;object-fit:cover;object-position:top;display:block;border:1px solid var(--line);border-radius:4px;margin-bottom:6px}
+@media(max-width:600px){.review-pages{grid-template-columns:repeat(2,minmax(0,1fr))}.review-pages img{height:240px}}
+
+/* Aggiornamento immagine progetto marmi */
+.heritage-photo img{object-position:center center}
+
+/* Tavola macroscopica del progetto marmi, senza ritagli */
+.marble-macro-figure{margin:28px 0 0;max-width:850px}
+.marble-macro-figure a{display:block;background:#f6f5f0;border:1px solid var(--line)}
+.marble-macro-figure img{display:block;width:100%;height:auto;object-fit:contain}
+.marble-macro-figure figcaption{margin-top:10px;color:var(--muted);font-size:.88rem}
