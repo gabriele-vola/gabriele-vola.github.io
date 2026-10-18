@@ -1,0 +1,20 @@
+AGGIORNAMENTO SITO ACCADEMICO - 18 OTTOBRE 2026 (VERSIONE CORRETTA)
+
+1. Apri il repository gabriele-vola/gabriele-vola.github.io, ramo main.
+2. Carica tutti i file e l’intera cartella images/ dallo ZIP ESTATTO.
+   IMPORTANTE: sul precedente upload la cartella images risultava non aggiornata.
+3. Se GitHub non carica le cartelle trascinate, apri images/ nel repository, scegli Add file > Upload files e carica esplicitamente i QUATTRO file:
+   palazzo-madama-volume-2.webp
+   fornace-fournais-rora.webp
+   muratura-san-martino.webp
+   overburning-test-obt.webp
+4. Nella radice carica index.html, style.css, pietre-bergamasca.html, pietre-valdesi.html, progetti-ricerca.html, calendario-eventi.html, calendario.js, eventi.json e gli altri file presenti.
+5. Esegui Commit changes. Controlla la spunta verde in Actions.
+6. Controlla i link:
+   https://gabriele-vola.github.io/pietre-bergamasca.html
+   https://gabriele-vola.github.io/pietre-valdesi.html
+   https://gabriele-vola.github.io/progetti-ricerca.html
+   https://gabriele-vola.github.io/calendario-eventi.html
+7. Per aggiungere eventi: modifica eventi.json. Ogni oggetto contiene data (AAAA-MM-GG), titolo, categoria, luogo, descrizione, facoltativamente url.
+
+NOTA IMMAGINI BERGAMASCA: le immagini di esempio del dialogo non erano file originali caricati: le schede contengono spazi riservati da completare con fotografie autorizzate.
