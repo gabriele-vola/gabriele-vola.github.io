@@ -120,3 +120,18 @@
 .stone-gallery img{display:block;width:100%;height:135px;object-fit:cover;border-radius:3px}
 .stone-gallery figcaption{font-size:.76rem;color:#5b645f;line-height:1.4;margin-top:6px}
 @media(max-width:700px){.stone-photo-figure>img{min-height:240px;max-height:360px}.stone-gallery img{height:120px}}
+
+.event-photo{display:block;max-width:370px;width:100%;height:auto;object-fit:cover;border-radius:12px;margin:12px 0;}
+
+/* Locandine degli eventi: miniature cliccabili */
+.event-item .poster-link{display:block;width:fit-content;margin:1rem 0 .35rem;}
+.event-item .event-poster{display:block;max-width:min(100%,235px);max-height:340px;width:auto;height:auto;object-fit:contain;border-radius:8px;border:1px solid #cbd5e1;box-shadow:0 3px 13px #0002;}
+.event-item .poster-link:focus-visible{outline:3px solid #1467ba;outline-offset:4px;}
+.event-item .poster-caption{font-size:.82rem;color:#526171;margin:.1rem 0 1rem;}
+.stone-biblio{margin-top:1.3rem;padding-top:.9rem;border-top:1px solid #c8d2dc;}
+.stone-biblio h3{margin-bottom:.5rem;}
+.stone-biblio ol{padding-left:1.3rem;}
+.stone-biblio li{margin-bottom:.55rem;line-height:1.55;}
+
+/* Archivio poster scientifici */
+.poster-archive-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1.25rem;margin-top:1.5rem}.poster-archive-card,.poster-empty{background:white;border:1px solid var(--line);border-radius:16px;padding:1.35rem;box-shadow:0 4px 18px #153b3012}.poster-archive-card img{width:100%;height:270px;object-fit:contain;background:#f3f4f2;border-radius:10px}.poster-archive-card h2{font-size:1.15rem;line-height:1.4}.poster-archive-card small{color:var(--muted);font-weight:700}.poster-actions{display:flex;flex-wrap:wrap;gap:.75rem}.poster-actions a{color:var(--green);font-weight:700}.poster-empty{grid-column:1/-1}

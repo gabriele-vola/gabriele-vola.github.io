@@ -1,9 +1,76 @@
 [
   {
+    "data": "2026-04-18",
+    "titolo": "La Pietra di Luserna: storia, geologia, identità, cultura – presentazione del volume",
+    "categoria": "libro",
+    "luogo": "Locanda San Bernardo, Bibiana (TO)",
+    "ora": "18:00",
+    "descrizione": "Presentazione del Volume 1 con Gabriele Vola e il coautore arch. Paolo Montesanto, nell’ambito delle iniziative Sën Gian e MineraLuserna. Cena su prenotazione alle ore 20:00.",
+    "locandina": "images/locandina-presentazione-luserna.webp"
+  },
+  {
     "data": "2026-05-14",
     "titolo": "Le colonne raccontano: i marmi del Santuario di Lovere tra arte e geologia",
     "categoria": "incontro",
     "luogo": "Lovere (BG)",
-    "descrizione": "Conferenza divulgativa dedicata ai materiali lapidei del Santuario di Lovere."
+    "descrizione": "Conferenza divulgativa sulla caratterizzazione e la provenienza dei materiali lapidei del santuario."
+  },
+  {
+    "data": "2026-05-15",
+    "fine": "2026-05-17",
+    "titolo": "MineraLuserna 2026",
+    "categoria": "congresso",
+    "luogo": "Torre Pellice (TO), Palaghiaccio Cotta Morandini",
+    "descrizione": "11ª edizione di MineraLuserna, Torre Pellice, 15–17 maggio 2026: mineralogia, geologia e patrimonio del territorio.",
+    "url": "https://turismotorino.org/it/visita/eventi/minera-luserna-2026",
+    "locandina": "images/locandina-mineraluserna-2026.webp",
+    "ora": "9:00–19:00"
+  },
+  {
+    "data": "2026-05-16",
+    "titolo": "Visite guidate alle cave della Pietra di Luserna",
+    "categoria": "escursione",
+    "luogo": "Val Pellice (TO) · partenza da MineraLuserna",
+    "descrizione": "Visite alle cave di Pietra di Luserna con Gianluca Odetto e Gabriele Vola. Ritrovo al Palaghiaccio Cotta Morandini; partenze alle 10:30, 15:00 e 17:00; prenotazione obbligatoria.",
+    "url": "https://www.ecodelchisone.it/eventi/2026-05-15/pala-cotta-morandini-mineraluserna",
+    "locandina": "images/locandina-visita-cave-2026.webp"
+  },
+  {
+    "data": "2026-09-15",
+    "fine": "2026-09-17",
+    "titolo": "Congresso congiunto SGI–SIMP 2026 – Ter(r)ra: Risorse, Rischi, Rispetto",
+    "categoria": "congresso",
+    "luogo": "Padova Congress, Padova",
+    "descrizione": "Congressi, sessioni e poster. Abstract di G. Vola e collaboratori: (1) From laboratory overburning tests to kiln operation: mineralogical and thermodynamic controls on lime sticking tendency; (2) From marble to lime: Archaeometric and experimental investigation of historical lime production in Rorà.",
+    "url": "https://www.geoscienze.org/padova2026/",
+    "links": [
+      {
+        "etichetta": "Sessioni tematiche",
+        "url": "https://www.geoscienze.org/826/call-for-sessions.html"
+      },
+      {
+        "etichetta": "Programma e libro degli abstract",
+        "url": "https://www.geoscienze.org/padova2026/"
+      }
+    ]
+  },
+  {
+    "data": "2026-10-24",
+    "titolo": "Incontro con il cavatore Motetta – Cava di marmo di Prali",
+    "categoria": "incontro",
+    "luogo": "Prali (TO) · sede/orario da confermare",
+    "descrizione": "Incontro dedicato alla cava e alle varietà del marmo; immagine di riferimento: sezione del fronte estrattivo della Majera–Colletta Sellar.",
+    "immagine": "images/cava-majera-stratigrafia.webp"
+  },
+  {
+    "data": "2026-11-21",
+    "titolo": "Il patrimonio geologico di Rorà: lo gneiss lamellare della Pietra di Luserna",
+    "sottotitolo": "Ottant'anni di attività estrattiva, lavorazione e valorizzazione di una risorsa del territorio.",
+    "categoria": "incontro",
+    "luogo": "Rorà (TO)",
+    "ora": "15:30 (programma provvisorio)",
+    "descrizione": "Intervento di Gabriele Vola con testimonianze del cavatore Aladino Rivoira, nell’ambito delle celebrazioni degli 80 anni dalla ricostituzione del Comune di Rorà (21–22 novembre 2026). Locandina in preparazione.",
+    "programma": "documenti/programma-rora-2026.docx",
+    "provvisorio": true
   }
 ]

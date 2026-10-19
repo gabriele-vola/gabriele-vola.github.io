@@ -1,0 +1,4 @@
+ARCHIVIO POSTER SCIENTIFICI
+Inserito 1 poster originale SGI–SIMP Padova 2026 (Rorà), con anteprima WEBP e PDF scaricabile.
+Per pubblicare: caricare tutti i file estratti e, soprattutto, entrambi i nuovi file in poster/ assieme a posters.json, poster.js e poster-scientifici.html.
+Per poster futuri: aggiungere PDF e anteprima WEBP in poster/ e una voce in posters.json.
