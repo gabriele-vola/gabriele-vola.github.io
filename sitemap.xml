@@ -1,36 +1,13 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://gabriele-vola.github.io/</loc>
-  </url>
-  <url>
-    <loc>https://gabriele-vola.github.io/bibliografia.html</loc>
-  </url>
-  <url>
-    <loc>https://gabriele-vola.github.io/marmi-valdesi.html</loc>
-  </url>
-  <url>
-    <loc>https://gabriele-vola.github.io/metodologie.html</loc>
-  </url>
-  <url>
-    <loc>https://gabriele-vola.github.io/pietre-bergamasca.html</loc>
-  </url>
-  <url>
-    <loc>https://gabriele-vola.github.io/pietre-valdesi.html</loc>
-  </url>
-  <url>
-    <loc>https://gabriele-vola.github.io/poster-scientifici.html</loc>
-  </url>
-  <url>
-    <loc>https://gabriele-vola.github.io/progetti-ricerca.html</loc>
-  </url>
-  <url>
-    <loc>https://gabriele-vola.github.io/calendario.html</loc>
-  </url>
-  <url>
-    <loc>https://gabriele-vola.github.io/calendario-eventi.html</loc>
-  </url>
+  <url><loc>https://gabriele-vola.github.io/</loc></url>
+  <url><loc>https://gabriele-vola.github.io/bibliografia.html</loc></url>
+  <url><loc>https://gabriele-vola.github.io/metodologie.html</loc></url>
+  <url><loc>https://gabriele-vola.github.io/progetti-ricerca.html</loc></url>
+  <url><loc>https://gabriele-vola.github.io/pietre-bergamasca.html</loc></url>
+  <url><loc>https://gabriele-vola.github.io/pietre-valdesi.html</loc></url>
+  <url><loc>https://gabriele-vola.github.io/marmi-valdesi.html</loc></url>
+  <url><loc>https://gabriele-vola.github.io/poster-scientifici.html</loc></url>
+  <url><loc>https://gabriele-vola.github.io/calendario-eventi.html</loc></url>
 </urlset>
-
-  
