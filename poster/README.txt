@@ -1,0 +1,1 @@
+Inserire qui i poster PDF originali e le anteprime .webp. Aggiornare posters.json con anno, titolo, autori, congresso, localita, data, abstract_url, file e anteprima. Non inserire contenuti senza verifica.
