@@ -69,6 +69,13 @@
     "categoria": "incontro",
     "luogo": "Sala Odetto, Piazza Fontana, Rorà (TO)",
     "ora": "15:40",
-    "descrizione": "Intervento di Gabriele Vola dedicato alla storia geologica di Rorà e al legame secolare del territorio con l’estrazione e la lavorazione della Pietra di Luserna. Con i racconti dell’artigiano Aladino Rivoira sugli strumenti e sulle tecniche tradizionali di lavorazione della pietra. Evento promosso dall’Amministrazione comunale nell’ambito delle celebrazioni per gli 80 anni dalla ricostituzione del Comune di Rorà."
+    "descrizione": "Intervento di Gabriele Vola dedicato alla storia geologica di Rorà e al legame secolare del territorio con l’estrazione e la lavorazione della Pietra di Luserna. Con i racconti dell’artigiano Aladino Rivoira sugli strumenti e sulle tecniche tradizionali di lavorazione della pietra. Evento promosso dall’Amministrazione comunale nell’ambito delle celebrazioni per gli 80 anni dalla ricostituzione del Comune di Rorà.",
+    "locandina": "images/locandina-rora-80-anni-2026.webp",
+    "links": [
+      {
+        "etichetta": "Programma ufficiale completo (PDF)",
+        "url": "https://gabriele-vola.github.io/documenti/21_22%20novembre%20Programma%20evento%2080%20anni%20Rora%CC%80.pdf"
+      }
+    ]
   }
 ]
