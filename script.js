@@ -1,1 +1,39 @@
-document.getElementById('year').textContent=new Date().getFullYear();const b=document.getElementById('menuToggle'),n=document.getElementById('links');b.addEventListener('click',()=>{const open=n.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?'Chiudi menu':'Apri menu');});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false');}));
+(() => {
+  'use strict';
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+  const button = document.getElementById('menuToggle');
+  const nav = document.getElementById('links');
+  if (!button || !nav) return;
+  const dropdowns = [...nav.querySelectorAll('.nav-dropdown')];
+  function closeMenu() {
+    nav.classList.remove('open');
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-label', 'Apri menu');
+  }
+  button.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    button.setAttribute('aria-expanded', String(isOpen));
+    button.setAttribute('aria-label', isOpen ? 'Chiudi menu' : 'Apri menu');
+    if (!isOpen) dropdowns.forEach(x => x.open = false);
+  });
+  dropdowns.forEach(details => details.addEventListener('toggle', () => {
+    if (details.open) dropdowns.filter(x => x !== details).forEach(x => x.open = false);
+  }));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    closeMenu();
+    dropdowns.forEach(x => x.open = false);
+  }));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      dropdowns.forEach(x => x.open = false);
+      closeMenu();
+    }
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.header')) {
+      dropdowns.forEach(x => x.open = false);
+      closeMenu();
+    }
+  });
+})();
