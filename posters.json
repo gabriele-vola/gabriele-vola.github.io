@@ -23,37 +23,16 @@
     "abstract_url": "https://iris.unito.it/retrieve/e27ce42e-4196-2581-e053-d805fe0acbaa/SGI-SIMP%202014_Abstract%20book.pdf"
   },
   {
-    "anno": 2009,
-    "titolo": "Coloured “marbles” recently quarried in the Province of Bergamo, Italy",
-    "congresso": "MAEGS-16 · 16th Meeting of the Association of European Geological Societies",
-    "autori": "G. Vola, P. Primavori",
-    "localita": "Babeș-Bolyai University · Cluj-Napoca, Romania",
-    "data": "9–13 luglio 2009",
-    "progetto": "Arabescato Orobico e Marmo di Zandobbio: caratterizzazione e impiego ornamentale",
-    "file": "poster/maegs16-2009-coloured-marbles.pdf",
-    "anteprima": "poster/maegs16-2009-coloured-marbles.webp"
-  },
-  {
-    "anno": 2009,
-    "titolo": "Stones used in Bergamo architecture",
-    "congresso": "MAEGS-16 · 16th Meeting of the Association of European Geological Societies",
-    "autori": "G. Vola, L. Fiora, L. Alciati",
-    "localita": "Babeș-Bolyai University · Cluj-Napoca, Romania",
-    "data": "9–13 luglio 2009",
-    "progetto": "Pietre da costruzione e ornamentali nell'architettura storica di Bergamo",
-    "file": "poster/maegs16-2009-bergamo-architecture.pdf",
-    "anteprima": "poster/maegs16-2009-bergamo-architecture.webp"
-  },
-  {
-    "anno": 2008,
-    "titolo": "Caratteristiche geo-petrografiche e lito-applicative del “Marmo” Arabescato Orobico della Val Brembana",
-    "congresso": "84° Congresso Nazionale della Società Geologica Italiana",
-    "autori": "G. Vola, L. Fiora",
-    "localita": "Sassari, Italia",
-    "data": "15–17 settembre 2008",
-    "progetto": "Geologia, cave, varietà commerciali, microfacies e utilizzi architettonici dell’Arabescato Orobico",
-    "file": "poster/arabescato-orobico-2008.pdf",
-    "anteprima": "poster/arabescato-orobico-2008.webp"
+    "anno": 2014,
+    "titolo": "Stratigraphic and petrographic analysis of the Arabescato Orobico dimension stone from the Brembana Valley (Calcare Rosso, Bergamasc Alps)",
+    "congresso": "87° Congresso SGI – 90° Congresso SIMP",
+    "autori": "G. Vola, F. Jadoul",
+    "localita": "Milano, Italia",
+    "data": "10–12 settembre 2014",
+    "progetto": "Arabescato Orobico: ricostruzione stratigrafica del Calcare Rosso, analisi delle litofacies e correlazione con le varietà ornamentali",
+    "file": "poster/sgi-simp-2014-arabescato-orobico.pdf",
+    "anteprima": "poster/sgi-simp-2014-arabescato-orobico.webp",
+    "abstract_url": "https://doi.org/10.3301/IJG.2014.11"
   },
   {
     "anno": 2010,
@@ -87,5 +66,49 @@
     "progetto": "ROMACONS: analisi quantitativa delle malte pozzolaniche dei calcestruzzi marittimi romani",
     "file": "poster/sgi-2010-romacons.pdf",
     "anteprima": "poster/sgi-2010-romacons.webp"
+  },
+  {
+    "anno": 2010,
+    "titolo": "Mineralogical and Petrographic Characterization of Ancient Roman Maritime Concretes from Mediterranean Harbours",
+    "congresso": "2nd Historic Mortars Conference (HMC 2010)",
+    "autori": "G. Vola, M. D. Jackson, J. P. Oleson, C. Brandon, R. L. Hohlfelder",
+    "localita": "Praga, Repubblica Ceca",
+    "data": "22–24 settembre 2010",
+    "progetto": "ROMACONS: caratterizzazione mineralogica, chimica e microstrutturale dei calcestruzzi marittimi romani e dei campioni sperimentali di Brindisi",
+    "file": "poster/hmc-2010-romacons.pdf",
+    "anteprima": "poster/hmc-2010-romacons.webp"
+  },
+  {
+    "anno": 2009,
+    "titolo": "Coloured “marbles” recently quarried in the Province of Bergamo, Italy",
+    "congresso": "MAEGS-16 · 16th Meeting of the Association of European Geological Societies",
+    "autori": "G. Vola, P. Primavori",
+    "localita": "Babeș-Bolyai University · Cluj-Napoca, Romania",
+    "data": "9–13 luglio 2009",
+    "progetto": "Arabescato Orobico e Marmo di Zandobbio: caratterizzazione e impiego ornamentale",
+    "file": "poster/maegs16-2009-coloured-marbles.pdf",
+    "anteprima": "poster/maegs16-2009-coloured-marbles.webp"
+  },
+  {
+    "anno": 2009,
+    "titolo": "Stones used in Bergamo architecture",
+    "congresso": "MAEGS-16 · 16th Meeting of the Association of European Geological Societies",
+    "autori": "G. Vola, L. Fiora, L. Alciati",
+    "localita": "Babeș-Bolyai University · Cluj-Napoca, Romania",
+    "data": "9–13 luglio 2009",
+    "progetto": "Pietre da costruzione e ornamentali nell'architettura storica di Bergamo",
+    "file": "poster/maegs16-2009-bergamo-architecture.pdf",
+    "anteprima": "poster/maegs16-2009-bergamo-architecture.webp"
+  },
+  {
+    "anno": 2008,
+    "titolo": "Caratteristiche geo-petrografiche e lito-applicative del “Marmo” Arabescato Orobico della Val Brembana",
+    "congresso": "84° Congresso Nazionale della Società Geologica Italiana",
+    "autori": "G. Vola, L. Fiora",
+    "localita": "Sassari, Italia",
+    "data": "15–17 settembre 2008",
+    "progetto": "Geologia, cave, varietà commerciali, microfacies e utilizzi architettonici dell’Arabescato Orobico",
+    "file": "poster/arabescato-orobico-2008.pdf",
+    "anteprima": "poster/arabescato-orobico-2008.webp"
   }
 ]
