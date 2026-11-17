@@ -137,3 +137,16 @@
 
 /* Archivio poster scientifici */
 .poster-archive-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1.25rem;margin-top:1.5rem}.poster-archive-card,.poster-empty{background:white;border:1px solid var(--line);border-radius:16px;padding:1.35rem;box-shadow:0 4px 18px #153b3012}.poster-archive-card img{display:block;width:100%;height:440px;object-fit:contain;background:#f3f4f2;border-radius:10px}.poster-archive-card .poster-preview-link{display:block}.poster-archive-card .poster-preview-link:focus-visible{outline:3px solid var(--green);outline-offset:4px;border-radius:10px}@media(max-width:600px){.poster-archive-card img{height:390px}}.poster-archive-card h2{font-size:1.15rem;line-height:1.4}.poster-archive-card small{color:var(--muted);font-weight:700}.poster-actions{display:flex;flex-wrap:wrap;gap:.75rem}.poster-actions a{color:var(--green);font-weight:700}.poster-empty{grid-column:1/-1}
+
+
+/* Inventario litotipi delle colonne del Santuario di Lovere */
+.stone-detail{min-width:0}
+.lovere-catalogue{margin:24px 0}
+.lovere-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;border:1px solid #d7ded8;border-radius:5px}
+.lovere-table{width:100%;min-width:720px;border-collapse:collapse;font-size:.82rem;line-height:1.45}
+.lovere-table th,.lovere-table td{padding:10px 11px;border-bottom:1px solid #d7ded8;vertical-align:top;text-align:left}
+.lovere-table thead th{background:#e8efea;color:#284a3c;font-weight:700}
+.lovere-table tbody tr:nth-child(even){background:#f7f8f5}
+.lovere-table tbody tr:last-child>*{border-bottom:0}
+.lovere-table th:first-child{white-space:nowrap}
+@media(max-width:720px){.lovere-table-scroll{margin-right:0}.lovere-table{min-width:650px}}
