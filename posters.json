@@ -54,5 +54,38 @@
     "progetto": "Geologia, cave, varietà commerciali, microfacies e utilizzi architettonici dell’Arabescato Orobico",
     "file": "poster/arabescato-orobico-2008.pdf",
     "anteprima": "poster/arabescato-orobico-2008.webp"
+  },
+  {
+    "anno": 2010,
+    "congresso": "85° Congresso Nazionale della Società Geologica Italiana",
+    "localita": "Pisa, Italia",
+    "data": "6–8 settembre 2010",
+    "titolo": "Geo-petrographic and lito-applicative characterization of the Zandobbio “marble” from the lower Cavallina Valley, Bergamo",
+    "autori": "G. Vola",
+    "progetto": "Dolomia di Zandobbio: caratterizzazione petrografica, varietà ornamentali e applicazioni architettoniche",
+    "file": "poster/sgi-2010-zandobbio.pdf",
+    "anteprima": "poster/sgi-2010-zandobbio.webp"
+  },
+  {
+    "anno": 2010,
+    "congresso": "85° Congresso Nazionale della Società Geologica Italiana",
+    "localita": "Pisa, Italia",
+    "data": "6–8 settembre 2010",
+    "titolo": "Geo-petrographic and lito-applicative characterization of the Volpinite (Bardiglio of Bergamo “marble”), from lower Val Camonica",
+    "autori": "G. Vola, L. Alciati, E. Di Majo, L. Fiora",
+    "progetto": "Volpinite: anidrite ornamentale, provenienza geologica, estrazione e impieghi storici",
+    "file": "poster/sgi-2010-volpinite.pdf",
+    "anteprima": "poster/sgi-2010-volpinite.webp"
+  },
+  {
+    "anno": 2010,
+    "congresso": "85° Congresso Nazionale della Società Geologica Italiana",
+    "localita": "Pisa, Italia",
+    "data": "6–8 settembre 2010",
+    "titolo": "Petrographic quantitative analysis of pozzolanic mortars from ancient Roman marine concrete cores, drilled by Romacons team (2006–2009)",
+    "autori": "G. Vola, C. Stanislao, C. Rispoli, M. De Gennaro, V. Morra",
+    "progetto": "ROMACONS: analisi quantitativa delle malte pozzolaniche dei calcestruzzi marittimi romani",
+    "file": "poster/sgi-2010-romacons.pdf",
+    "anteprima": "poster/sgi-2010-romacons.webp"
   }
 ]
