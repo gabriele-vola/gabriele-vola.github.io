@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://gabriele-vola.github.io/archivio-pubblicazioni.html">
+<meta name="description" content="Archivio ricercabile delle pubblicazioni scientifiche di Gabriele Vola: ricerca per autore, titolo, anno, tipologia e DOI.">
+<meta property="og:title" content="Archivio pubblicazioni | Gabriele Vola">
+<meta property="og:description" content="Bibliografia scientifica ricercabile per titolo, anno e tipologia, con collegamenti agli identificativi DOI.">
+<title>Archivio pubblicazioni | Gabriele Vola</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><a class="skip" href="#contenuto">Salta al contenuto</a>
+<header class="header"><div class="shell nav"><a class="brand" href="index.html"><strong>GABRIELE VOLA</strong><span>GEOLOGO · Ph.D.</span></a><button aria-controls="links" aria-expanded="false" aria-label="Apri menu" class="menu" id="menuToggle">☰</button><nav aria-label="Navigazione principale" id="links"><a href="index.html#profilo">Profilo</a><a href="index.html#ricerca">Ricerca</a><a href="metodologie.html">Metodologie</a><a href="pietre-bergamasca.html">Pietre della Bergamasca</a><a href="pietre-valdesi.html">Pietre delle Valli valdesi</a><a href="progetti-ricerca.html">Progetti di ricerca</a><a href="calendario-eventi.html">Calendario eventi</a><a href="poster-scientifici.html">Poster scientifici</a><a href="bibliografia.html">Pubblicazioni</a><a href="archivio-pubblicazioni.html" aria-current="page">Archivio</a><a href="index.html#collaborazioni">Collaborazioni</a><a href="index.html#contatti">Contatti</a></nav></div></header>
+<main id="contenuto"><section class="marbles-heading"><div class="shell"><p class="eyebrow">RICERCA SCIENTIFICA · REPERTORIO BIBLIOGRAFICO</p><h1>Archivio delle pubblicazioni</h1><p class="lead">Consulta e ricerca la produzione scientifica per titolo, autore, anno e tipologia. Ogni scheda rimanda alla bibliografia completa e agli eventuali DOI già disponibili.</p></div></section>
+<section class="section shell archive-layout"><p>Questo archivio utilizza direttamente i dati della <a href="bibliografia.html">bibliografia completa</a>: i numeri delle pubblicazioni e i collegamenti restano quindi coerenti. La presenza di una citazione o di un DOI <strong>non implica che il PDF sia liberamente scaricabile</strong>.</p>
+<div class="archive-filters"><label for="archive-search">Cerca nei riferimenti</label><input id="archive-search" type="search" placeholder="Titolo, autore, parola chiave, anno…" autocomplete="off">
+<label for="archive-group">Tipologia</label><select id="archive-group"><option value="">Tutte le tipologie</option></select>
+<label for="archive-year">Anno</label><select id="archive-year"><option value="">Tutti gli anni</option></select>
+<button type="button" id="archive-reset">Azzera filtri</button></div>
+<p class="archive-status" id="archive-count" role="status" aria-live="polite">Caricamento delle pubblicazioni…</p>
+<div id="archive-results" class="archive-results"></div>
+<p id="archive-error" hidden>Non è stato possibile leggere la bibliografia. Puoi comunque consultare la <a href="bibliografia.html">lista completa delle pubblicazioni</a>.</p>
+</section>
+<section class="section shell"><h2>Accesso ai documenti e conservazione digitale</h2><p>Per i lavori pubblicati su rivista è preferibile usare il DOI dell’editore; gli eventuali manoscritti disponibili in accesso aperto, poster, presentazioni e dati di ricerca possono essere collegati ai rispettivi record istituzionali o a <a href="https://zenodo.org/" target="_blank" rel="noopener noreferrer">Zenodo</a>, nel rispetto dei diritti di pubblicazione. Non viene caricato automaticamente alcun PDF.</p><p><a href="poster-scientifici.html">Consulta l’archivio dei poster scientifici →</a></p></section></main>
+<footer><div class="shell footer-inner"><span>© <span id="year"></span> Gabriele Vola</span><span>Geologia · Archeometria · Patrimonio lapideo</span><a href="index.html">Homepage ↑</a></div></footer>
+<script src="script.js"></script>
+<script>
+(function(){
+"use strict";
+const search=document.getElementById("archive-search"),group=document.getElementById("archive-group"),year=document.getElementById("archive-year"),results=document.getElementById("archive-results"),count=document.getElementById("archive-count"),error=document.getElementById("archive-error");
+let items=[];
+const normalize=s=>(s||"").toLocaleLowerCase("it").normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+function option(select,value){const o=document.createElement("option");o.value=value;o.textContent=value;select.appendChild(o)}
+function render(){
+ const q=normalize(search.value.trim());
+ const found=items.filter(x=>(!q||normalize(x.text).includes(q))&&(!group.value||x.group===group.value)&&(!year.value||x.year===year.value));
+ results.replaceChildren();
+ count.textContent=found.length+" pubblicazioni trovate su "+items.length;
+ if(!found.length){const p=document.createElement("p");p.textContent="Nessun risultato per i filtri selezionati.";results.appendChild(p);return}
+ const frag=document.createDocumentFragment();
+ for(const x of found){
+   const article=document.createElement("article");article.className="archive-record";
+   const meta=document.createElement("p");meta.className="archive-record-meta";meta.textContent="#"+x.number+" · "+(x.year||"Anno non indicato")+" · "+x.group;
+   const description=document.createElement("p");description.className="archive-record-text";description.textContent=x.text;
+   const links=document.createElement("p");links.className="archive-record-links";
+   const bib=document.createElement("a");bib.href="bibliografia.html#pub-"+x.number;bib.textContent="Scheda bibliografica →";links.appendChild(bib);
+   for(const link of x.links){
+      const a=document.createElement("a");a.href=link.url;a.textContent=link.label;a.target="_blank";a.rel="noopener noreferrer";links.appendChild(a);
+   }
+   article.append(meta,description,links);frag.appendChild(article);
+ }
+ results.appendChild(frag);
+}
+fetch("bibliografia.html").then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.text()}).then(source=>{
+ const doc=new DOMParser().parseFromString(source,"text/html");
+ const groups=[...doc.querySelectorAll(".bibliography-group")];
+ for(const section of groups){
+  const name=section.querySelector("h2")?.textContent.trim()||"Altri contributi";
+  for(const li of section.querySelectorAll("li[data-original-number]")){
+   const n=Number(li.dataset.originalNumber);if(!Number.isInteger(n))continue;
+   const text=li.textContent.replace(/\s+/g," ").trim();
+   const y=text.match(/\((19|20)\d{2}\)/)?.[0].slice(1,5)||"";
+   const links=[...li.querySelectorAll("a[href]")].map(a=>({url:a.href,label:/doi\.org|\/doi\//i.test(a.href)?"DOI ↗":"Fonte ↗"}));
+   items.push({number:n,text,group:name,year:y,links});
+  }
+ }
+ if(!items.length)throw Error("Bibliografia vuota");
+ items.sort((a,b)=>a.number-b.number);
+ [...new Set(items.map(x=>x.group))].forEach(x=>option(group,x));
+ [...new Set(items.map(x=>x.year).filter(Boolean))].sort((a,b)=>Number(b)-Number(a)).forEach(x=>option(year,x));
+ render();
+}).catch(()=>{count.textContent="Archivio temporaneamente non disponibile.";error.hidden=false});
+search.addEventListener("input",render);group.addEventListener("change",render);year.addEventListener("change",render);
+document.getElementById("archive-reset").addEventListener("click",()=>{search.value="";group.value="";year.value="";render();search.focus()});
+})();
+</script></body></html>
