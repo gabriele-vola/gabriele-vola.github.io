@@ -68,7 +68,7 @@ fetch("bibliografia.html").then(r=>{if(!r.ok)throw Error("HTTP "+r.status);retur
    const n=Number(li.dataset.originalNumber);if(!Number.isInteger(n))continue;
    const text=li.textContent.replace(/\s+/g," ").trim();
    const y=text.match(/\((19|20)\d{2}\)/)?.[0].slice(1,5)||"";
-   const links=[...li.querySelectorAll("a[href]")].map(a=>({url:a.href,label:/\.pdf(?:[?#]|$)/i.test(a.href)?"Leggi / scarica PDF ↗":/doi\.org|\/doi\//i.test(a.href)?"DOI ↗":"Fonte ↗"}));
+   const links=[...li.querySelectorAll("a[href]")].map(a=>{const label=a.textContent.trim();return {url:a.href,label:/Fascicolo completo|Scheda del fascicolo|Leggi \/ scarica PDF/i.test(label)?label:/doi\.org|\/doi\//i.test(a.href)?"DOI ↗":/\.pdf(?:[?#]|$)/i.test(a.href)?"PDF ↗":"Fonte ↗"};});
    items.push({number:n,text,group:name,year:y,links});
   }
  }
